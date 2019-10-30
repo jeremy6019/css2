@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스모델</title>
+<style>
+		p{
+				/* 배경색 적용 */
+				background-color: silver ;
+				/* 다른 영역과의 여백 설정- 상하좌우 동일하게 설정 
+				    margin은 겹치면 큰 값 1개만 적용  */ 
+			     margin:20px ;
+			     /* border와 콘텐츠 와의 여백 
+			     왼쪽에만 적용 */ 
+			     padding-left:50px ; 
+		}		
+
+		p:hover{                                
+			padding-left:20px ;      
+		}   
+       
+		span:active{
+				padding-left:5px ;
+				padding-top: 5px ;  
+				border-left-color: red;
+				border-top-color: red;
+				border-right-color: blue;
+				border-bottom-color: blue;
+				border-width: 5px; 
+				border-style: solid;
+				
+		}  
+		span{
+				background-color: silver ;
+				border-left-color: blue;
+				border-top-color: blue;
+				border-right-color: red;
+				border-bottom-color: red;
+				border-width: 5px; 
+				border-style: solid;
+			
+		}   
+	    li{
+	       list-style: none; 
+	       width: 110px;
+	       height:70px;
+	       padding-top: 30px;
+	       text-align:center ;
+	       background-color:#f93;
+	       border-radius: 0 0 0 100px;
+	    }
+		
+</style>
+</head>
+<body>
+		<li>보더적용</li>
+        <a href="#"><span>버튼 </span></a>
+	    <p>박스 모델 적용 연습입니다. </p>
+</body>
+</html>
